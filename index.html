@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Georgiy Pavlov</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway100,300,300i,400,400i,500,700,900|Roboto:100,300,300i,400,400i,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/fm.revealator.jquery.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+</head>
+<body>
+    <header>
+        <div class="slider">
+            <div class="slider-page curry"><h1>Welcome to my new website</h1></div>
+            <div class="slider-page"><h1>It is my second website</h1></div>
+            <div class="slider-page"><h1>And it became even better</h1></div>
+        </div>
+    </header>
+    
+    <section class="about-us">
+        <div class="container">
+            <h2 class="revealator-fade revealator-delay2">About Us</h2>
+            <p class="about-us-text revealator-fade revealator-delay2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquid accusantium quia suscipit officia ut, repudiandae ipsa eveniet architecto, magnam sint, cupiditate nesciunt dolore cum voluptates vitae recusandae non soluta sequi. Non voluptates, explicabo et magni. Consequatur dolorum aspernatur ducimus, doloremque nam, aliquam ad quisquam repudiandae similique eius corporis. Dignissimos odio iure, asperiores eius repellendus nemo quidem commodi modi!</p>
+        </div>
+    </section>
+    
+    <section class="photo-institutions">
+        <div class="container">
+            <h2 class="revealator-zoomin">Photo institutions</h2>
+            <div class="photo-institutions-element">
+                <img class="photo-institutions-img clearfix revealator-slideleft" src="assets/img/3.jpg" alt="#">
+                <h3 class="dish-name revealator-slideup">Moxito</h3>
+                <p class="photo-institutions-text revealator-slideup">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam adipisci aut tempora nostrum cum hic dicta nobis! Laudantium repellendus, officia. Molestiae voluptate officia a repellat error, distinctio saepe eius nemo. Unde odio debitis, fugit consequuntur distinctio dignissimos, corporis possimus, nesciunt accusamus obcaecati enim aliquid, provident laboriosam velit?</p>
+            </div>
+            <div class="photo-institutions-element">
+                <img class="photo-institutions-img clearfix revealator-slideleft" src="assets/img/4.jpg" alt="#">
+                <h3 class="dish-name revealator-slideup">Nuts</h3>
+                <p class="photo-institutions-text revealator-slideup">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem obcaecati consectetur aperiam doloremque commodi autem nulla sunt sint error repellat totam, non tempore eaque ipsam iusto nesciunt magnam illum laudantium qui tenetur quasi inventore. Quo eveniet porro tempora. Ipsa autem, modi quis, neque quam in dolor dolorum.</p>
+            </div>
+            <div class="photo-institutions-element">
+                <img class="photo-institutions-img clearfix revealator-slideleft" src="assets/img/5.jpg" alt="#">
+                <h3 class="dish-name revealator-slideup">Crispy Sticks</h3>
+                <p class="photo-institutions-text revealator-slideup">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim sapiente error impedit unde nisi tempore quos accusantium non vero quo veritatis, inventore recusandae quasi ex, nulla dolores repellat debitis pariatur architecto ducimus? Earum possimus rerum amet, voluptatum, et autem veniam distinctio. Laborum reiciendis tempora et doloremque fugit.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="restaurant">
+        <div class="container">
+            <h2 class="revealator-zoomin">Restaurant</h2>
+            <img class="restaurant-img" src="assets/img/7.jpg" alt="#">
+            <p class="restaurant-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate aut repellat, deleniti quo accusamus corporis, magnam aperiam cumque in nam tempore omnis sapiente aspernatur dolor voluptate voluptatum, dicta a est minus explicabo libero iste et ad laborum. Ex obcaecati hic saepe deserunt labore odit quam numquam itaque qui corporis.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">   
+            <h2 class="footer-text">Спасибо за посещение моего сайта</h2>
+        </div>     
+    </footer>
+    
+    <!-- jQuery and Plugins -->
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    
+    <script src="assets/js/fm.revealator.jquery.min.js"></script>
+    
+    <!-- JavaScript and jQuery code -->
+    
+    <script>
+
+    $(document).ready(function(){
+        setInterval(function() {
+            var currentImage = $('.slider-page.curry');
+            var currentImageIndex = $('.slider-page.curry').index();
+            var nextImgeIndex = currentImageIndex + 1;
+            var nextImage = $('.slider-page').eq(nextImgeIndex);
+            currentImage.fadeOut(1200);
+            currentImage.removeClass('curry');
+        
+            if(nextImgeIndex == ($('.slider-page:last').index()+1)){
+                $('.slider-page').eq(0).fadeIn(1000);
+                $('.slider-page').eq(0).addClass('curry');
+            } else {
+                nextImage.fadeIn(1000);
+                nextImage.addClass('curry');
+            }
+        }, 7000);
+        
+    })       
+    </script>
+    
+</body>
+</html>
