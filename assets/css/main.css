@@ -17,14 +17,26 @@ h1 {
     text-shadow: 2px 2px 14px #000;
 }
 
+h2 {
+    font-family: 'Roboto';
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 45px;
+}
+
 p {
     font-family: 'Raleway';
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.header-text {
+    font-style: italic;
+    text-shadow: 2px 2px 7px #000;
     font-size: 25px;
     color: #fff;
-    font-weight: 300;
-    font-style: italic;
     padding-left: 45px;
-    text-shadow: 2px 2px 7px #000;
 }
 
 a {
@@ -44,4 +56,20 @@ li {
     display: inline-block;
     text-decoration: none;
     margin-right: 10px;
+}
+
+.item-skill {
+    padding-top: 35px;
+}
+
+.skill-img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.skill-text {
+    position: relative;
+    display: block;
+    text-align: center;
 }
