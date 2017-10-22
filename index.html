@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RixAiledStudio</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway100,300,300i,400,400i,500,700,900|Roboto:100,300,300i,400,400i,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/fm.revealator.jquery.min.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+</head>
+<body>
+    
+    <section class="nav-menu revealator-fade">
+        <a href="rus.html" class="col-lg-2 col-xs-2 button-lang"> 
+            <div class="language">
+                <h4 class="img-text">Eng</h4>
+                <img class="img-language" src="assets/img/eng.jpg" alt="#">
+            </div>
+        </a>      
+        <div id="menu" class="col-lg-10 col-xs-10">  
+            <ul class="menu">
+                <li><a href="#home" class="menu-txt" href="#">Home</a></li>
+                <li><a href="#about" class="menu-txt" href="#">About me</a></li>
+                <li><a href="#education" class="menu-txt" href="#">Education</a></li>
+                <li><a class="menu-txt" href="#">Skills</a></li>
+                <li><a class="menu-txt" href="#">Portfolio</a></li>
+                <li><a class="menu-txt" href="#">Rewiews</a></li>
+                <li><a class="menu-txt" href="#">Contact me</a></li>
+            </ul>
+        </div>     
+    </section>
+    
+    <header id="home">
+        <h1>I'm Jonn</h1>
+        <p class="header-text">I am a photographer</p>
+    </header>
+    
+    <section id="about" class="about-me">
+        <div class="container">  
+            <h2 class="about-h2 revealator-slideright">About me</h2>
+            <div class="about">
+                <img class="about-img revealator-slideright" src="assets/img/2.jpg" alt="#">
+                <p class="about-text revealator-slideright">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae neque quo, illum consectetur fugiat dicta qui ullam obcaecati hic ratione officia enim unde optio omnis incidunt, facilis at eveniet tempora voluptatibus corrupti doloribus eos animi quisquam dolore!</p>
+            </div>
+        </div>     
+    </section>
+      
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="education-h2 revealator-slideright">Education</h2>
+                <div class="row">
+                    <div class="revealator-zoomout col-lg-4 col-xs-4">
+                        <img class="job-img first" src="assets/img/3.png" alt="#">
+                        <h4 class="job">Newsman</h4>
+                    </div>
+                    <div class="revealator-zoomout col-lg-4 col-xs-4">
+                        <img class="job-img" src="assets/img/4.png" alt="#">
+                        <h4 class="job">Painter</h4>
+                    </div>
+                    <div class="revealator-zoomout col-lg-4 col-xs-4">
+                        <img class="job-img second" src="assets/img/5.png" alt="#">
+                        <h4 class="job">Designer</h4>
+                    </div>
+                </div>
+        </div>
+    </section>  
+       
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/fm.revealator.jquery.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+ 
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+ 
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+         
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+
+    </script>
+</body>
+</html>

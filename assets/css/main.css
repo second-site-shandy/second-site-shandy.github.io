@@ -1,0 +1,147 @@
+h1, h2, h3, h4, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(29, 29, 29, 0.6);
+    height: 30px;
+}
+
+.language {
+    position: relative;
+    width: 90px;
+    height: 42px;
+    background-color: rgba(29, 29, 29, 0.6);
+    border-radius: 8px;
+    top: -16px;
+    left: -35px;
+    margin: 0;
+}
+
+.img-language, .img-text {
+    position: relative;
+    display: inline-block;
+}
+
+.img-text {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 17.85;
+    color: #fff;
+    margin-top: 18px;
+    margin-left: 25px;
+}
+
+.menu {
+    float: right;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.menu-txt {
+    font-family: 'Roboto';
+    font-size: 12.8px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header {
+    background: url(../img/1.jpg) no-repeat center top / cover;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+h2 {
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: 65px;
+    text-transform: uppercase;
+    color: #1d1d1d;
+}
+
+.header-text {
+    font-family: 'Roboto';
+    font-weight: 200;
+    font-size: 25px;
+    color: #fff;
+    margin-left: 115px;
+}
+
+.about-h2 {
+    padding-bottom: 15px; 
+}
+
+.button-lang {
+    cursor: pointer;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.nav-menu {
+    padding: 0;
+}
+
+.about-img {
+    float: left;
+}
+
+.about-text {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 20px;
+    padding-left: 410px;
+    padding-top: 120px;
+}
+
+.education-h2 {
+    color: #fff;
+}
+
+.education {
+    background: #1d1d1d url(../img/6.png) no-repeat right top / contain;
+    background-size: contain;
+}
+
+.job-img {
+    display: block;
+    width: 140px;
+    margin: 20px auto 0 auto;
+}
+
+.first {
+    width: 150px;
+    margin-top: 40px;
+}
+
+.second {
+    margin-top: 35px;
+}
+
+.job {
+    display: block;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 17px;
+}
