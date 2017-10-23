@@ -3,6 +3,16 @@ h1, h2, h3, h4, p, a {
     padding: 0;
 }
 
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 .nav-menu {
     position: fixed;
     width: 100%;
@@ -71,7 +81,7 @@ h1 {
 h2 {
     font-family: 'Raleway';
     font-weight: 900;
-    font-size: 65px;
+    font-size: 45px;
     text-transform: uppercase;
     color: #1d1d1d;
 }
@@ -82,6 +92,15 @@ h2 {
     font-size: 25px;
     color: #fff;
     margin-left: 115px;
+}
+
+.rus-header {
+    font-family: 'Roboto';
+    font-weight: 200;
+    font-size: 25px;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 100px;
 }
 
 .about-h2 {
@@ -139,9 +158,152 @@ section {
 .job {
     display: block;
     font-family: 'Roboto';
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
     color: #fff;
     text-align: center;
     margin-top: 17px;
+}
+
+.number {
+    display: inline-block;
+    font-family: 'Roboto';
+    font-size: 45px;
+    font-weight: 800;
+    color: #1d1d1d;
+    margin-top: 32px;
+    margin-left: 25px;
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    transform: rotate(315deg);
+}
+
+.skill_bg {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 75px;
+    width: 150px;
+    height: 150px;
+    border: 10px solid #1d1d1d;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.skill-name {
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.portfolio {
+    background-color: #eee;
+}
+
+.portfolio-img {
+    display: block;
+    margin: 35px auto;
+}
+
+.rewiews-h2 {
+    color: #fff;
+}
+
+.photo {
+    width: 300px;
+    float: left;
+    padding: 35px;
+}
+
+.name-man {
+    position: relative;
+    display: inline-block;
+    font-family: 'Raleway';
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 65px;
+}
+
+.rewiew-man {
+    position: relative;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.rewiews {
+    background: #1d1d1d url(../img/10.png) no-repeat right top / contain;
+    background-size: contain;
+}
+
+.submit-form {
+    width: 250px;
+    height: 35px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background: none;
+    outline: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #272b28;
+    border-bottom-width: 1px;
+}
+
+.intput-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.button-input {
+    display: inline-block;
+    background-color: #1d1d1d;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 15px;
+    width: 120px;
+    padding: 12px 0;
+    margin-top: 30px;
+    float: right;
+    text-align: center;
+    border-radius: 18px;
+    margin-right: 60px;
+}
+.contact-form {
+    position: relative;
+}
+
+.social-menu {
+    float: right;
+}
+
+.rixailedstudio {
+    color: #fff;
+    float: left;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 17px;
+}
+
+footer{
+    background-color: #1d1d1d;
+}
+
+.item-soc {
+    width: 30px;
 }
